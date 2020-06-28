@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'constants.dart';
 
-
+import '../constants.dart';
 
 class IconContent extends StatelessWidget {
-  IconContent({this.icon,this.label});
+  IconContent({this.icon, this.label});
 
   final IconData icon;
   final String label;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -17,13 +17,14 @@ class IconContent extends StatelessWidget {
         Icon(
           icon,
           size: 80.0,
-
         ),
         SizedBox(
           height: 15.0,
         ),
-        Text(label,style:kLabelTextStyle,
-        ),
+        Text(
+          label,
+          style: kLabelTextStyle,
+        )
       ],
     );
   }
